@@ -28,4 +28,9 @@ public class Ranges {
     public static ArrayList<Coord> getAllCoords() {
         return allCoords;
     }
+
+    public static boolean inRange(Coord coord) {
+        return coord.x >= 0 && coord.x < size.x &&
+               coord.y >= 0 && coord.y < size.y;
+    }
 }
