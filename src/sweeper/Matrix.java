@@ -1,6 +1,6 @@
 package sweeper;
 
-public class Matrix {
+class Matrix {
     Box[][] matrix;
 
     Matrix(Box box) {

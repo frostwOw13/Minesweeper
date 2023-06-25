@@ -9,6 +9,7 @@ public class JavaMinesweeper extends JFrame {
     private Game game;
     private final int COLS = 9;
     private final int ROWS = 9;
+    private final int BOMBS = 10;
     private final int IMAGE_SIZE = 50;
     private JPanel panel;
 
@@ -17,7 +18,7 @@ public class JavaMinesweeper extends JFrame {
     }
 
     private JavaMinesweeper() {
-        game = new Game(COLS, ROWS);
+        game = new Game(COLS, ROWS, BOMBS);
         game.start();
         setImages();
         initPanel();
