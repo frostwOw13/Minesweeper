@@ -97,7 +97,13 @@ public class JavaMinesweeper extends JFrame {
                 return "Congratulations, you win!";
             case PLAYED:
             default:
-                return "Welcome!";
+                if (game.getTotalFlaged() == 0) {
+                    return "Welcome!";
+                } else {
+                    return "Think twice! Flagged " +
+                            game.getTotalFlaged() + " of " +
+                            game.getTotalBombs() + " bombs.";
+                }
         }
     }
 

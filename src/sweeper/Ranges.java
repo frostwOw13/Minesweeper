@@ -53,4 +53,8 @@ public class Ranges {
         }
         return result;
     }
+
+    static int getSquare() {
+        return size.x * size.y;
+    }
 }

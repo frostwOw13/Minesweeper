@@ -26,6 +26,14 @@ public class Game {
         }
     }
 
+    public int getTotalBombs() {
+        return bomb.getTotalBombs();
+    }
+
+    public int getTotalFlaged() {
+        return flag.getTotalFlaged();
+    }
+
     public void pressLeftButton(Coord coord) {
         openBox(coord);
     }
